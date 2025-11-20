@@ -9,6 +9,7 @@ React経験者がスマホアプリ開発に挑戦するための実践的なハ
 - ✅ **実践的**: 健康管理アプリを実際に作りながら学ぶ
 - ✅ **デプロイまで**: App Store / Google Play へのリリース手順も網羅
 - ✅ **実務に即した内容**: デバッグ、つまずきポイント、効率的な開発方法
+- ✅ **体系的な番号付け**: 全ドキュメントに番号を付けて学習順序を明確化
 
 ## 🎯 完成するアプリ
 
@@ -23,38 +24,65 @@ React経験者がスマホアプリ開発に挑戦するための実践的なハ
 - リマインダー通知
 - クラウド同期
 
-## 📖 ドキュメント構成
+## 📖 ドキュメント構成（番号順）
 
-### はじめに
+### 01. はじめに
 
-- **[EXPO_TUTORIAL_README.md](EXPO_TUTORIAL_README.md)** - カリキュラム全体の概要
-- **[docs/tech-architecture.md](docs/tech-architecture.md)** - React Native/Expoの技術アーキテクチャ完全解説
+**[docs/01-curriculum-overview.md](docs/01-curriculum-overview.md)** - カリキュラム全体の概要  
+全23ステップの構成、学習の進め方、完成するアプリの機能を説明
 
-### 基礎編
+**[docs/02-tech-architecture.md](docs/02-tech-architecture.md)** - 技術アーキテクチャ完全解説  
+React、React Native、Expo、ネイティブAPIの関係性を5層構造で図解
 
-- **[docs/step-00-setup.md](docs/step-00-setup.md)** - 開発環境のセットアップ
-- **[docs/step-01-minimal-app.md](docs/step-01-minimal-app.md)** - 最小構成のExpoアプリ
+### 02. セットアップ
 
-### 実践編（サンプル）
+**[docs/03-setup-guide.md](docs/03-setup-guide.md)** - 開発環境のセットアップ  
+Node.js、Expo CLI、VSCode、エミュレーターのインストールと設定
 
-- **[docs/step-08-camera.md](docs/step-08-camera.md)** - カメラ機能の実装
-- **[docs/step-15-bluetooth.md](docs/step-15-bluetooth.md)** - Bluetooth機能の実装
+### 03. 基礎学習
 
-### 開発ガイド
+**[docs/04-minimal-app.md](docs/04-minimal-app.md)** - 最小構成のExpoアプリ  
+基本的なコンポーネント、スタイリング、技術的な仕組みの詳細解説
 
-- **[docs/debugging-guide.md](docs/debugging-guide.md)** - デバッグ・開発効率化ガイド
-- **[docs/common-pitfalls.md](docs/common-pitfalls.md)** - 実務でつまずきやすいポイント集
-- **[docs/production-checklist.md](docs/production-checklist.md)** - 実務開発者の考慮事項完全ガイド ⭐NEW
+### 04. 実践チュートリアル（サンプル）
 
-### デプロイ
+**[docs/09-camera-tutorial.md](docs/09-camera-tutorial.md)** - カメラ機能の実装  
+expo-camera、権限管理、写真撮影、レイヤー構造の解説
 
-- **[docs/deployment-guide.md](docs/deployment-guide.md)** - App Store / Google Play へのリリース手順
+**[docs/10-bluetooth-tutorial.md](docs/10-bluetooth-tutorial.md)** - Bluetooth機能の実装  
+BLE通信、心拍計連携、GATTプロトコル、データ受信の仕組み
 
-## 🚀 学習の進め方
+### 05. 開発ガイド
 
-### 1. 開発環境をセットアップ
+**[docs/05-debugging-guide.md](docs/05-debugging-guide.md)** - デバッグ・開発効率化ガイド  
+ログ確認、Expo DevTools、React Native Debugger、エラー解決法
 
-```bash
+**[docs/06-common-pitfalls.md](docs/06-common-pitfalls.md)** - 実務でつまずきやすいポイント集  
+プラットフォーム間の差異、権限エラー、ビルドエラー、よくある問題と解決法
+
+**[docs/07-production-checklist.md](docs/07-production-checklist.md)** - 実務開発者の考慮事項完全ガイド  
+パフォーマンス、セキュリティ、UX、テスト、監視など12カテゴリの実務知識
+
+### 06. デプロイ
+
+**[docs/08-deployment-guide.md](docs/08-deployment-guide.md)** - App Store / Google Play リリース手順  
+EAS Build、TestFlight、審査対策、OTAアップデート
+
+### 07. リファレンス
+
+**[docs/11-quick-reference.md](docs/11-quick-reference.md)** - クイックリファレンス ⭐NEW  
+よく使うコマンド、コンポーネント、Hooks、設定をすぐに参照
+
+**[docs/12-faq.md](docs/12-faq.md)** - よくある質問（FAQ） ⭐NEW  
+開発中によくある疑問と回答を網羅
+
+---
+
+## 🚀 3ステップで始める
+
+### Step 1: 開発環境をセットアップ
+
+\`\`\`bash
 # Node.js をインストール（v18以上）
 node --version
 
@@ -64,145 +92,88 @@ node --version
 # スマホに Expo Go をインストール
 # iOS: App Store
 # Android: Google Play
-```
+\`\`\`
 
-### 2. ドキュメントを順番に読む
+### Step 2: シンプルなプロジェクトを作成
 
-1. [EXPO_TUTORIAL_README.md](EXPO_TUTORIAL_README.md) - 全体像を把握
-2. [docs/tech-architecture.md](docs/tech-architecture.md) - 技術的な仕組みを理解
-3. [docs/step-00-setup.md](docs/step-00-setup.md) - 環境構築
-4. [docs/step-01-minimal-app.md](docs/step-01-minimal-app.md) - 最初のアプリを作成
+このリポジトリに含まれるサンプルプロジェクトで試せます：
+
+\`\`\`bash
+cd simple-expo-app
+npm install
+npx expo start
+\`\`\`
+
+### Step 3: ドキュメントを順番に読む
+
+1. **[01-curriculum-overview.md](docs/01-curriculum-overview.md)** - 全体像を把握
+2. **[02-tech-architecture.md](docs/02-tech-architecture.md)** - 技術的な仕組みを理解
+3. **[03-setup-guide.md](docs/03-setup-guide.md)** - 環境構築
+4. **[04-minimal-app.md](docs/04-minimal-app.md)** - 最初のアプリを作成
 5. 以降、各ステップを順番に進める
 
-### 3. 実際にコードを書く
+**つまずいたら:**
+- [05-debugging-guide.md](docs/05-debugging-guide.md) - デバッグ方法を確認
+- [06-common-pitfalls.md](docs/06-common-pitfalls.md) - よくある問題を確認
+- [12-faq.md](docs/12-faq.md) - FAQを確認
 
-**コピペせず、手で打つことを推奨**（理解が深まります）
+---
 
-### 4. つまずいたら
+## 📚 学習の進め方
 
-- [docs/debugging-guide.md](docs/debugging-guide.md) - デバッグ方法を確認
-- [docs/common-pitfalls.md](docs/common-pitfalls.md) - よくある問題を確認
-- エラーメッセージをよく読む
-- Google / Stack Overflow で検索
+### 推奨順序
 
-## 📚 全23ステップの構成
+\`\`\`
+Phase 1: 準備・基礎
+├─ 01. カリキュラム概要を読む
+├─ 02. 技術アーキテクチャを理解
+├─ 03. 環境をセットアップ
+└─ 04. 最小構成のアプリを作成
 
-### Phase 0: 準備編
-- **Step 0**: 開発環境のセットアップ ✅
+Phase 2: 実践
+├─ 各ステップのチュートリアルを実践
+├─ 09. カメラ機能（サンプル）
+└─ 10. Bluetooth機能（サンプル）
 
-### Phase 1: 基礎編
-- **Step 1**: 最小構成のExpoアプリ ✅
-- **Step 2**: ナビゲーション（React Navigation）
-- **Step 3**: ローカルストレージ（AsyncStorage）
+Phase 3: 実務スキル
+├─ 05. デバッグ手法を学ぶ
+├─ 06. よくある問題を把握
+└─ 07. 実務の考慮事項を理解
 
-### Phase 2: UI/UX強化編
-- **Step 4**: リスト表示（FlatList）
-- **Step 5**: フォーム管理（React Hook Form）
-- **Step 6**: 日付ピッカー
-- **Step 7**: グラフ表示
+Phase 4: デプロイ
+└─ 08. App Store / Google Play にリリース
 
-### Phase 3: ネイティブ機能編
-- **Step 8**: カメラ（expo-camera） ✅
-- **Step 9**: 画像ピッカー
-- **Step 10**: ファイルシステム
+参考資料（いつでも）
+├─ 11. クイックリファレンス
+└─ 12. FAQ
+\`\`\`
 
-### Phase 4: センサー・位置情報編
-- **Step 11**: 位置情報（expo-location）
-- **Step 12**: 歩数計（expo-sensors）
-- **Step 13**: 地図表示（react-native-maps）
-
-### Phase 5: 高度な機能編
-- **Step 14**: 通知（expo-notifications）
-- **Step 15**: Bluetooth（expo-bluetooth） ✅
-- **Step 16**: バックグラウンドタスク
-- **Step 17**: 状態管理（Zustand）
-- **Step 18**: API連携（React Query）
-
-### Phase 6: 完成・デプロイ編
-- **Step 19**: アプリアイコン・スプラッシュスクリーン
-- **Step 20**: パフォーマンス最適化
-- **Step 21**: テスト（Jest）
-- **Step 22**: EAS Build でビルド
-- **Step 23**: App Store / Google Play 申請 ✅
-
-## 🛠 前提知識
-
-### 必要
-- JavaScript (ES6+)
-- React の基礎（コンポーネント、Hooks、Props/State）
-
-### あると望ましい
-- TypeScript
-- 非同期処理（Promise、async/await）
-- REST API の基礎
-
-## 💡 学習のコツ
-
-1. **理解を優先**: なぜそうなるのかを理解する
-2. **手を動かす**: コピペではなく自分で打つ
-3. **実機でテスト**: エミュレーターだけでなく実機でも確認
-4. **エラーを恐れない**: エラーは学びのチャンス
-5. **こまめにコミット**: 動く状態を保存しておく
-
-## 🎓 このハンズオンで学べること
-
-### 技術的知識
-- React Nativeの仕組み
-- Expoの活用方法
-- ネイティブAPIとの連携
-- クロスプラットフォーム開発
-
-### 実務スキル
-- デバッグ手法
-- パフォーマンス最適化
-- エラー対処法
-- アプリのデプロイ
-
-### 設計力
-- コンポーネント設計
-- 状態管理
-- ディレクトリ構成
+---
 
 ## 📊 学習時間の目安
 
 | Phase | 内容 | 所要時間 |
 |-------|------|---------|
-| Phase 0-1 | 環境構築〜基礎 | 3〜5時間 |
-| Phase 2 | UI/UX強化 | 4〜6時間 |
-| Phase 3-4 | ネイティブ機能 | 6〜8時間 |
-| Phase 5 | 高度な機能 | 6〜8時間 |
-| Phase 6 | デプロイ | 4〜6時間 |
-| **合計** | | **25〜35時間** |
+| Phase 1 | 準備・基礎 | 3〜5時間 |
+| Phase 2 | 実践チュートリアル | 15〜20時間 |
+| Phase 3 | 実務スキル | 5〜8時間 |
+| Phase 4 | デプロイ | 4〜6時間 |
+| **合計** | | **27〜39時間** |
 
-週末に集中して取り組めば、2〜3週間で完走できます！
-
-## 🆘 困ったときは
-
-### 公式ドキュメント
-- [Expo公式](https://docs.expo.dev/)
-- [React Native公式](https://reactnative.dev/)
-- [React公式](https://react.dev/)
-
-### コミュニティ
-- [Expo Forums](https://forums.expo.dev/)
-- [Stack Overflow](https://stackoverflow.com/questions/tagged/expo)
-- [GitHub Issues](https://github.com/expo/expo/issues)
-
-### このリポジトリ
-- Issues で質問OK
-- プルリクエスト歓迎
-
-## 📄 ライセンス
-
-MIT License
-
-自由に使用・改変・配布できます。
+週末に集中して取り組めば、**2〜3週間で完走**できます！
 
 ---
 
 ## 🎉 さあ始めましょう！
 
-**[EXPO_TUTORIAL_README.md](EXPO_TUTORIAL_README.md)** を開いて、学習を開始してください。
+**[docs/01-curriculum-overview.md](docs/01-curriculum-overview.md)** を開いて、学習を開始してください。
 
-Good luck & Happy Coding! 🚀
+または、シンプルなサンプルプロジェクトから始める：
 
+\`\`\`bash
+cd simple-expo-app
+npm install
+npx expo start
+\`\`\`
+
+**Good luck & Happy Coding! 🚀**
