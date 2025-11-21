@@ -76,8 +76,28 @@ EAS Build、TestFlight、審査対策、OTAアップデート
 **[docs/12-faq.md](docs/12-faq.md)** - よくある質問（FAQ）
 開発中によくある疑問と回答を網羅
 
-**[docs/13-native-modules.md](docs/13-native-modules.md)** - ネイティブコード統合完全ガイド ⭐NEW
+**[docs/13-native-modules.md](docs/13-native-modules.md)** - ネイティブコード統合完全ガイド
 Swift/KotlinでiOS/Androidネイティブコードを書く方法、Expo Modules API、Config Plugins、2024-2025年のトレンドアーキテクチャ（React Native New Architecture、Expo Router、Monorepoなど）
+
+### 08. UI・アニメーションライブラリ ⭐NEW
+
+**[docs/14-tamagui.md](docs/14-tamagui.md)** - Tamagui完全ガイド
+ユニバーサルUIライブラリ、コンパイル時最適化、テーマシステム、50以上のプリビルトコンポーネント、React Native + Web対応
+
+**[docs/15-nativewind.md](docs/15-nativewind.md)** - NativeWind完全ガイド
+Tailwind CSSをReact Nativeで使用、ユーティリティファースト、ダークモード、レスポンシブデザイン
+
+**[docs/16-reanimated.md](docs/16-reanimated.md)** - React Native Reanimated 3完全ガイド
+高性能アニメーション、UIスレッド実行、Worklets、Layout Animations、60FPS保証
+
+**[docs/17-moti.md](docs/17-moti.md)** - Moti完全ガイド
+宣言的アニメーション、Framer Motion風API、Reanimatedベース、シンプルで直感的
+
+**[docs/18-gesture-handler.md](docs/18-gesture-handler.md)** - React Native Gesture Handler完全ガイド
+ネイティブジェスチャー処理、タップ・スワイプ・ピンチ・回転、Reanimated統合、遅延ゼロ
+
+**[docs/19-skia.md](docs/19-skia.md)** - React Native Skia完全ガイド
+高性能2Dグラフィックス、カスタム描画、エフェクト、データビジュアライゼーション、ゲーム開発
 
 ---
 
