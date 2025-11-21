@@ -70,11 +70,14 @@ EAS Build、TestFlight、審査対策、OTAアップデート
 
 ### 07. リファレンス
 
-**[docs/11-quick-reference.md](docs/11-quick-reference.md)** - クイックリファレンス ⭐NEW  
+**[docs/11-quick-reference.md](docs/11-quick-reference.md)** - クイックリファレンス
 よく使うコマンド、コンポーネント、Hooks、設定をすぐに参照
 
-**[docs/12-faq.md](docs/12-faq.md)** - よくある質問（FAQ） ⭐NEW  
+**[docs/12-faq.md](docs/12-faq.md)** - よくある質問（FAQ）
 開発中によくある疑問と回答を網羅
+
+**[docs/13-native-modules.md](docs/13-native-modules.md)** - ネイティブコード統合完全ガイド ⭐NEW
+Swift/KotlinでiOS/Androidネイティブコードを書く方法、Expo Modules API、Config Plugins、2024-2025年のトレンドアーキテクチャ（React Native New Architecture、Expo Router、Monorepoなど）
 
 ---
 
